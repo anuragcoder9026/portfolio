@@ -27,18 +27,36 @@
     <script>
         tailwind.config = {};
 
-        // Ensure content is visible after Tailwind processes
+        // More robust loading - wait for Tailwind to fully process
+        function showContent() {
+            // Double check that styles are applied by looking for a computed style
+            const testElement = document.createElement('div');
+            testElement.className = 'hidden';
+            document.body.appendChild(testElement);
+            const isHidden = window.getComputedStyle(testElement).display === 'none';
+            document.body.removeChild(testElement);
+
+            if (isHidden || document.readyState === 'complete') {
+                document.body.classList.add('loaded');
+            } else {
+                // If Tailwind isn't ready, wait a bit more
+                setTimeout(showContent, 50);
+            }
+        }
+
+        // Wait for both DOM and all resources
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', function () {
-                setTimeout(() => {
-                    document.body.classList.add('loaded');
-                }, 100);
+                setTimeout(showContent, 100);
             });
         } else {
-            setTimeout(() => {
-                document.body.classList.add('loaded');
-            }, 100);
+            setTimeout(showContent, 100);
         }
+
+        // Failsafe: show content after max 1 second no matter what
+        setTimeout(() => {
+            document.body.classList.add('loaded');
+        }, 1000);
     </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
