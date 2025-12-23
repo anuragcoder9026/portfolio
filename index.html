@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Singh | Software Engineer & GenAI Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+        :root {
+            --bg: #030712;
+            --card: rgba(17, 24, 39, 0.7);
+            --accent: #bef264;
+            --accent-glow: rgba(190, 242, 100, 0.3);
+        }
+
+        body {
+            background-color: var(--bg);
+            color: #f1f5f9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: radial-gradient(circle at 50% -20%, #1e293b 0%, #030712 100%);
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .glass {
+            background: var(--card);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hover-glow:hover {
+            box-shadow: 0 0 30px var(--accent-glow);
+            border-color: var(--accent);
+            transition: all 0.4s ease;
+        }
+
+        .skill-tag {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.03);
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        input,
+        textarea {
+            background: rgba(255, 255, 255, 0.05) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: white !important;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--accent) !important;
+            outline: none;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+    </style>
+</head>
+
+<body class="selection:bg-lime-400 selection:text-black">
+
+    <header class="fixed top-0 w-full z-50 glass border-b border-white/5 px-8 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-2xl font-extrabold tracking-tighter uppercase text-white leading-none">Anurag
+                    Singh</span>
+                <span class="mono text-[10px] text-lime-400 mt-1 uppercase tracking-widest">NIT Jalandhar • B.Tech
+                    CSE</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase">
+                <a href="#experience" class="hover:text-lime-400 transition">Experience</a>
+                <a href="#projects" class="hover:text-lime-400 transition">Projects</a>
+                <a href="#skills" class="hover:text-lime-400 transition">Stack</a>
+                <a href="#contact" class="hover:text-lime-400 transition">Contact</a>
+            </nav>
+            <div class="flex gap-4">
+                <a href="mailto:anuragsinghmzp2003@gmail.com"
+                    class="text-slate-400 hover:text-lime-400 transition-colors text-xl"><i
+                        class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/anuragcoder9026" target="_blank"
+                    class="text-slate-400 hover:text-lime-400 transition-colors text-xl"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/anurag-singh-0b2a04257" target="_blank"
+                    class="text-slate-400 hover:text-lime-400 transition-colors text-xl"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/nitjanuragsingh" target="_blank"
+                    class="text-slate-400 hover:text-lime-400 transition-colors text-xl"><i
+                        class="fa-solid fa-code"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pt-32 pb-20">
+
+        <section class="grid lg:grid-cols-2 gap-12 items-center mb-40">
+            <div>
+                <h2
+                    class="text-sm font-bold mono text-lime-400 mb-4 tracking-[0.3em] uppercase underline decoration-2 underline-offset-8">
+                    Available for Opportunities</h2>
+                <h1 class="text-6xl lg:text-8xl font-black mb-6 leading-[0.9]">Architecting <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-blue-400">GenAI</span>
+                    Solutions.</h1>
+                <p class="text-slate-400 text-lg max-w-xl mb-10 leading-relaxed">
+                    Final year student at <b>Dr. B. R. Ambedkar NIT Jalandhar</b> (CGPA: 8.44). I build intelligent web
+                    platforms and modernize enterprise cloud architectures using <b>RAG</b> and <b>MERN stack</b>.
+                </p>
+
+                <div class="flex flex-wrap gap-6 mb-12">
+                    <a href="Anurag_Singh_Resume.pdf" download
+                        class="group relative px-8 py-4 font-bold text-black transition-all duration-300">
+                        <span
+                            class="absolute inset-0 w-full h-full transition duration-300 ease-out transform translate-x-1 translate-y-1 bg-lime-400 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span
+                            class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-lime-400"></span>
+                        <span class="relative flex items-center gap-2 uppercase tracking-tighter">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </span>
+                    </a>
+                    <a href="#contact"
+                        class="px-8 py-4 font-bold border-2 border-white/20 rounded-sm hover:bg-white hover:text-black transition-all uppercase tracking-tighter">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                    <div class="glass px-6 py-4 rounded-xl border-lime-400/20 shadow-xl shadow-lime-400/5">
+                        <p class="text-xs text-slate-500 mono uppercase mb-1">LeetCode Rank</p>
+                        <p class="text-2xl font-bold text-white tracking-tighter">Knight <span
+                                class="text-lime-400 text-sm font-medium italic">(1907 Rating)</span></p>
+                    </div>
+                    <div class="glass px-6 py-4 rounded-xl border-blue-400/20 shadow-xl shadow-blue-400/5">
+                        <p class="text-xs text-slate-500 mono uppercase mb-1">Impact</p>
+                        <p class="text-2xl font-bold text-white tracking-tighter">70% <span
+                                class="text-blue-400 text-sm font-medium italic">Efficiency Boost</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative hidden lg:block">
+                <div class="absolute inset-0 bg-lime-400/10 blur-[120px] rounded-full"></div>
+                <div
+                    class="glass p-8 rounded-3xl border-white/10 relative overflow-hidden group hover:border-lime-400/40 transition-all duration-500">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="mono text-sm space-y-4">
+                        <p class="text-blue-400">const developer = {</p>
+                        <p class="pl-4">name: <span class="text-lime-300">"Anurag Singh"</span>,</p>
+                        <p class="pl-4">leetcode_problems: <span class="text-orange-300">900+</span>,</p>
+                        <p class="pl-4">specialization: [<span class="text-orange-300">"Full Stack
+                                Development"</span>,<span class="text-orange-300">"Gen AI / RAG"</span>]
+                        </p>
+                        <p class="pl-4">current_org: <span class="text-lime-300">"Optum (UHG)"</span>,</p>
+                        <p class="pl-4">status: <span class="text-lime-300">"Looking for Impact"</span></p>
+                        <p class="text-blue-400">};</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-40">
+            <h3 class="text-3xl font-black mb-12 flex items-center gap-4">
+                <span class="text-lime-400">01.</span> Technical Stack
+            </h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass p-6 rounded-2xl hover-glow">
+                    <h4 class="mono text-lime-400 text-xs font-bold mb-4 tracking-widest uppercase">Programming</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">C++</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">C</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">JavaScript</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">SQL</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">Java</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl hover-glow">
+                    <h4 class="mono text-lime-400 text-xs font-bold mb-4 tracking-widest uppercase">Web & Backend</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">React.js</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">Node.js</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">Express.js</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">MongoDB</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">MySQL</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">Rest API</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl hover-glow">
+                    <h4 class="mono text-lime-400 text-xs font-bold mb-4 tracking-widest uppercase">AI & Tools</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">Gen AI / RAG</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">Git / GitHub</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">Postman</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">VS Code</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl hover-glow">
+                    <h4 class="mono text-lime-400 text-xs font-bold mb-4 tracking-widest uppercase">Core CS</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">DSA</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">DBMS</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">OOPS</span>
+                        <span class="skill-tag px-3 py-1 rounded-md text-xs font-medium">Networks</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-40">
+            <h3 class="text-3xl font-black mb-12 flex items-center gap-4">
+                <span class="text-blue-400">02.</span> Professional Experience
+            </h3>
+            <div class="space-y-16">
+                <div class="grid lg:grid-cols-12 gap-8 relative group">
+                    <div class="lg:col-span-3">
+                        <p class="text-lime-400 mono font-bold text-sm tracking-tighter">June 2025 — Aug 2025</p>
+                        <h4 class="text-xl font-extrabold mt-1">Optum (UHG)</h4>
+                        <p class="text-slate-500 text-xs uppercase tracking-widest">Technology Development Intern</p>
+                    </div>
+                    <div class="lg:col-span-9 glass p-8 rounded-3xl group-hover:border-lime-400/30 transition-all">
+                        <ul class="text-slate-400 space-y-4 text-sm leading-relaxed">
+                            <li class="flex gap-3">
+                                <span class="text-lime-400 font-bold">»</span>
+                                <span>Migrated 10% of legacy COBOL modules to PySpark on Databricks as part of the ECAP
+                                    team for provider payments.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-lime-400 font-bold">»</span>
+                                <span>Implemented scalable solutions using Databricks Notebooks and DLT, reducing data
+                                    processing time by <b>70%</b>.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 relative group">
+                    <div class="lg:col-span-3">
+                        <p class="text-blue-400 mono font-bold text-sm tracking-tighter">July 2024 — Dec 2024</p>
+                        <h4 class="text-xl font-extrabold mt-1 text-slate-300">TPO - NITJ</h4>
+                        <p class="text-slate-500 text-xs uppercase tracking-widest">Full-Stack Developer</p>
+                    </div>
+                    <div class="lg:col-span-9 glass p-8 rounded-3xl group-hover:border-blue-400/30 transition-all">
+                        <ul class="text-slate-400 space-y-4 text-sm leading-relaxed">
+                            <li class="flex gap-3">
+                                <span class="text-blue-400 font-bold">»</span>
+                                <span>Maintained the TPO website, boosting performance by <b>25%</b> and implementing
+                                    crucial placement filters.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-blue-400 font-bold">»</span>
+                                <span>Amplified student engagement by <b>40%</b> through a new query system and
+                                    branch-wise
+                                    placement tracking.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-40">
+            <h3 class="text-3xl font-black mb-12 flex items-center gap-4">
+                <span class="text-orange-400">03.</span> Engineering Projects
+            </h3>
+            <div class="space-y-12">
+                <div class="glass p-8 md:p-12 rounded-3xl border-white/5 relative overflow-hidden group">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-orange-500/10 blur-[100px] rounded-full"></div>
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div class="flex gap-2 mb-4">
+                                <span
+                                    class="bg-orange-500/20 text-orange-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase">GenAI
+                                    Platform</span>
+                            </div>
+                            <h4 class="text-3xl font-black mb-4 group-hover:text-orange-400 transition-colors">OrgMind
+                                AI</h4>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                                A multi-tenant GenAI RAG platform allowing organizations to upload documents, scrape
+                                websites, and deploy a private AI assistant with isolated knowledge bases in Just few
+                                minutes.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">React</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Express.js</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Pinecone</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Gemini AI</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Supabase</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Node.js</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">MongoDB</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://org-mind-ai-frontend.vercel.app" target="_blank"
+                                    class="inline-flex items-center gap-2 px-6 py-3 bg-orange-400/10 border border-orange-400/30 text-orange-400 font-bold text-sm rounded-lg hover:bg-orange-400 hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-400/30">
+                                    <i class="fa-solid fa-rocket"></i> Try Live
+                                </a>
+                                <a href="https://github.com/anuragcoder9026/OrgMind-Ai-Frontend" target="_blank"
+                                    class="inline-flex items-center gap-2 px-4 py-3 bg-slate-800/50 border border-slate-700 text-slate-300 font-bold text-sm rounded-lg hover:bg-slate-700 hover:border-orange-400/50 transition-all duration-300 hover:scale-105"
+                                    title="View on GitHub">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="glass p-6 rounded-2xl border-white/10 bg-gradient-to-br from-orange-400/5 to-transparent">
+                            <p class="mono text-xs text-orange-400 mb-4 font-bold uppercase tracking-widest">Key
+                                Features
+                            </p>
+                            <div class="space-y-3 text-sm text-slate-300">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-orange-400 font-bold text-lg">»</span>
+                                    <span>Implemented RAG pipeline with document ingestion, chunking, and vector
+                                        embeddings</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-orange-400 font-bold text-lg">»</span>
+                                    <span>Created plug-and-play NPM React chatbot SDK for website integration</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-orange-400 font-bold text-lg">»</span>
+                                    <span>Secure streaming responses with custom theming support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-8 md:p-12 rounded-3xl border-white/5 relative group">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="order-1">
+                            <div class="flex gap-2 mb-4"><span
+                                    class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Social
+                                    Learning
+                                    Platform</span></div>
+                            <h4 class="text-3xl font-black mb-4 group-hover:text-blue-400 transition-colors">
+                                InterviewMate</h4>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                                A comprehensive social learning platform where students connect with peers, practice
+                                through AI-powered mock interviews and quizzes, engage in real-time messaging, and track
+                                their progress with an analytics dashboard.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">React</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Node.js</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Express.js</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">MongoDB</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Socket.io</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Gemini AI</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://alokthakur490.github.io/Interview-Mate-frontend" target="_blank"
+                                    class="inline-flex items-center gap-2 px-6 py-3 bg-blue-400/10 border border-blue-400/30 text-blue-400 font-bold text-sm rounded-lg hover:bg-blue-400 hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-400/30">
+                                    <i class="fa-solid fa-rocket"></i> Try Live
+                                </a>
+                                <a href="https://github.com/anuragcoder9026/Interview-Mate-frontend" target="_blank"
+                                    class="inline-flex items-center gap-2 px-4 py-3 bg-slate-800/50 border border-slate-700 text-slate-300 font-bold text-sm rounded-lg hover:bg-slate-700 hover:border-blue-400/50 transition-all duration-300 hover:scale-105"
+                                    title="View on GitHub">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="order-2 glass p-6 rounded-2xl border-white/10 bg-gradient-to-br from-blue-400/5 to-transparent">
+                            <p class="mono text-xs text-blue-400 mb-4 font-bold uppercase tracking-widest">Key Features
+                            </p>
+                            <div class="space-y-3 text-sm text-slate-300">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 font-bold text-lg">»</span>
+                                    <span>AI-powered mock interviews and quizzes with personalized feedback</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 font-bold text-lg">»</span>
+                                    <span>Social features: connect with students, friend suggestions, live chat</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 font-bold text-lg">»</span>
+                                    <span>Real-time messaging with 95% delivery rate and sub-200ms latency</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-400 font-bold text-lg">»</span>
+                                    <span>Comprehensive dashboard tracking quizzes, interviews, and progress</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-8 md:p-12 rounded-3xl border-white/5 relative overflow-hidden group">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-purple-500/10 blur-[100px] rounded-full"></div>
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div class="flex gap-2 mb-4">
+                                <span
+                                    class="bg-purple-500/20 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Literature
+                                    Platform</span>
+                            </div>
+                            <h4 class="text-3xl font-black mb-4 group-hover:text-purple-400 transition-colors">Story
+                                Time</h4>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                                A community-centric web platform for storytelling and poetry enthusiasts, featuring MERN
+                                stack with advanced social features and content discovery.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">React.js</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">MongoDB</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Express.js</span>
+                                <span class="mono text-[10px] bg-slate-800/80 px-2 py-1 rounded">Node.js</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://anuragcoder9026.github.io/Anukriti" target="_blank"
+                                    class="inline-flex items-center gap-2 px-6 py-3 bg-purple-400/10 border border-purple-400/30 text-purple-400 font-bold text-sm rounded-lg hover:bg-purple-400 hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-400/30">
+                                    <i class="fa-solid fa-rocket"></i> Try Live
+                                </a>
+                                <a href="https://github.com/anuragcoder9026/Anukriti" target="_blank"
+                                    class="inline-flex items-center gap-2 px-4 py-3 bg-slate-800/50 border border-slate-700 text-slate-300 font-bold text-sm rounded-lg hover:bg-slate-700 hover:border-purple-400/50 transition-all duration-300 hover:scale-105"
+                                    title="View on GitHub">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="glass p-6 rounded-2xl border-white/10 bg-gradient-to-br from-purple-400/5 to-transparent">
+                            <p class="mono text-xs text-purple-400 mb-4 font-bold uppercase tracking-widest">Key
+                                Features
+                            </p>
+                            <div class="space-y-3 text-sm text-slate-300">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-purple-400 font-bold text-lg">»</span>
+                                    <span>Rating, commenting, liking, and following system</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-purple-400 font-bold text-lg">»</span>
+                                    <span>Personal libraries to save stories and poems for later</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-purple-400 font-bold text-lg">»</span>
+                                    <span>Explore section with category-based search and filtering</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="mb-40 grid md:grid-cols-2 gap-12 text-sm text-slate-400">
+            <div>
+                <h3 class="text-2xl font-black mb-8 text-white uppercase tracking-tighter">Achievements &nbsp; & &nbsp;
+                    Certificates
+                </h3>
+                <div class="space-y-4">
+                    <a href="https://certificate.givemycertificate.com/c/a244321b-48bb-4e22-816f-5894a96dc5ec"
+                        class="glass p-5 rounded-2xl flex items-start gap-4 hover:border-lime-400 transition-colors">
+                        <i class="fa-solid fa-medal text-yellow-500 text-xl"></i>
+                        <div>
+                            <p class="font-bold text-white">Top 10 Teams</p>
+                            <p>HackMOL 6.0 @ NIT Jalandhar</p>
+                        </div>
+                    </a>
+                    <a href=""
+                        class="glass p-5 rounded-2xl flex items-start gap-4 hover:border-lime-400 transition-colors">
+                        <i class="fa-solid fa-chess-knight text-blue-400 text-xl"></i>
+                        <div>
+                            <p class="font-bold text-white">LeetCode Knight</p>
+                            <p>Solved 900+ Problems | Max Rating 1907</p>
+                        </div>
+                    </a>
+                    <a href="https://unstop.com/certificate-preview/59742ea0-4781-4d50-8fed-08d7dfe34f3e"
+                        class="glass p-5 rounded-2xl flex items-start gap-4 hover:border-lime-400 transition-colors">
+                        <i class="fa-solid fa-trophy text-orange-400 text-xl"></i>
+                        <div>
+                            <p class="font-bold text-white">Flipkart Grid 6.0</p>
+                            <p>Qualified Among Top 2,000 Students</p>
+                        </div>
+                    </a>
+                    <a href="https://cdn.pwskills.com/learn/certificates/2d8955d3-f695-4d67-97c8-8d0257fec6d0.pdf"
+                        class="glass p-5 rounded-2xl flex items-start gap-4 hover:border-lime-400 transition-colors">
+                        <i class="fa-solid fa-certificate text-green-400 text-xl"></i>
+                        <div>
+                            <p class="font-bold text-white">DSA Certification</p>
+                            <p>Completed Data Structures and Algorithms Course from PW skills</p>
+                        </div>
+                    </a>
+                    <a href="https://cdn.pwskills.com/learn/certificates/beb911ee-c215-4c61-951a-a64eaf790410.pdf"
+                        class="glass p-5 rounded-2xl flex items-start gap-4 hover:border-lime-400 transition-colors">
+                        <i class="fa-solid fa-certificate text-green-400 text-xl"></i>
+                        <div>
+                            <p class="font-bold text-white">Backend Development Certification</p>
+                            <p>Completed Backend Development Course from PW skills</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-black mb-8 text-white uppercase tracking-tighter">Leadership</h3>
+                <div class="space-y-6">
+                    <div class="relative pl-6 border-l-2 border-slate-800">
+                        <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-orange-400"></div>
+                        <p class="font-bold text-white uppercase text-xs tracking-widest mb-1">Student Secretary</p>
+                        <p>Rajbhasha Samiti (Official Hindi Cell of NIT Jalandhar)</p>
+                    </div>
+                    <div class="relative pl-6 border-l-2 border-slate-800">
+                        <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-blue-400"></div>
+                        <p class="font-bold text-white uppercase text-xs tracking-widest mb-1">Student Member</p>
+                        <p>Training & Placement Office (TPO)</p>
+                    </div>
+                    <div class="relative pl-6 border-l-2 border-slate-800">
+                        <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-green-400"></div>
+                        <p class="font-bold text-white uppercase text-xs tracking-widest mb-1">Student Member</p>
+                        <p>Alumni Cell</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-20">
+            <h3 class="text-3xl font-black mb-12 flex items-center gap-4">
+                <span class="text-lime-400">04.</span> Send a Message
+            </h3>
+            <div class="glass p-8 md:p-12 rounded-3xl border-white/10 max-w-4xl mx-auto shadow-2xl">
+                <form action="https://formspree.io/f/mqezwkle" method="POST"
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <label class="mono text-[10px] uppercase text-slate-500 font-bold">Your Name</label>
+                        <input type="text" name="name" placeholder="John Doe" required
+                            class="px-4 py-3 rounded-lg transition-all">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="mono text-[10px] uppercase text-slate-500 font-bold">Your Email</label>
+                        <input type="email" name="email" placeholder="john@example.com" required
+                            class="px-4 py-3 rounded-lg transition-all">
+                    </div>
+                    <div class="flex flex-col gap-2 md:col-span-2">
+                        <label class="mono text-[10px] uppercase text-slate-500 font-bold">Your Message</label>
+                        <textarea name="message" rows="5" placeholder="How can I help you?" required
+                            class="px-4 py-3 rounded-lg transition-all resize-none"></textarea>
+                    </div>
+                    <div class="md:col-span-2 text-center mt-4">
+                        <button type="submit"
+                            class="w-full md:w-auto px-12 py-4 bg-lime-400 text-black font-black uppercase tracking-widest hover:scale-105 transition-all shadow-lg shadow-lime-400/20">
+                            Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass border-t border-white/5 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+            <h2 class="text-3xl font-black mb-8 uppercase tracking-tighter">Let's build something <span
+                    class="text-lime-400">legendary</span>.</h2>
+            <div class="flex gap-8 mb-8 text-2xl text-slate-500">
+                <a href="mailto:anuragsinghmzp2003@gmail.com" class="hover:text-lime-400 transition-colors"><i
+                        class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="hover:text-lime-400 transition-colors"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="hover:text-lime-400 transition-colors"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="mono text-[9px] text-slate-600 uppercase tracking-widest">Anurag Singh | B.Tech NIT Jalandhar |
+                Class of 2026</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
