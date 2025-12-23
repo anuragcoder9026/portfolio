@@ -6,117 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anurag Singh | Software Engineer & GenAI Architect</title>
 
-    <!-- Prevent FOUC -->
-    <style>
-        body {
-            opacity: 0;
-            transition: opacity 0.3s ease-in;
-        }
-
-        body.loaded {
-            opacity: 1;
-        }
-    </style>
-
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {};
 
-        // More robust loading - wait for Tailwind to fully process
-        function showContent() {
-            // Double check that styles are applied by looking for a computed style
-            const testElement = document.createElement('div');
-            testElement.className = 'hidden';
-            document.body.appendChild(testElement);
-            const isHidden = window.getComputedStyle(testElement).display === 'none';
-            document.body.removeChild(testElement);
-
-            if (isHidden || document.readyState === 'complete') {
-                document.body.classList.add('loaded');
-            } else {
-                // If Tailwind isn't ready, wait a bit more
-                setTimeout(showContent, 50);
-            }
-        }
-
-        // Wait for both DOM and all resources
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', function () {
-                setTimeout(showContent, 100);
-            });
-        } else {
-            setTimeout(showContent, 100);
-        }
-
-        // Failsafe: show content after max 1 second no matter what
-        setTimeout(() => {
-            document.body.classList.add('loaded');
-        }, 1000);
-    </script>
-
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --bg: #030712;
-            --card: rgba(17, 24, 39, 0.7);
-            --accent: #bef264;
-            --accent-glow: rgba(190, 242, 100, 0.3);
-        }
 
-        body {
-            background-color: var(--bg);
-            color: #f1f5f9;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-image: radial-gradient(circle at 50% -20%, #1e293b 0%, #030712 100%);
-        }
-
-        .mono {
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .glass {
-            background: var(--card);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .hover-glow:hover {
-            box-shadow: 0 0 30px var(--accent-glow);
-            border-color: var(--accent);
-            transition: all 0.4s ease;
-        }
-
-        .skill-tag {
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            background: rgba(255, 255, 255, 0.03);
-            transition: all 0.3s ease;
-        }
-
-        .skill-tag:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            transform: translateY(-2px);
-        }
-
-        input,
-        textarea {
-            background: rgba(255, 255, 255, 0.05) !important;
-            border: 1px solid rgba(255, 255, 255, 0.1) !important;
-            color: white !important;
-        }
-
-        input:focus,
-        textarea:focus {
-            border-color: var(--accent) !important;
-            outline: none;
-            box-shadow: 0 0 10px var(--accent-glow);
-        }
-    </style>
+    <!-- Local Tailwind CSS - No FOUC! -->
+    <link rel="stylesheet" href="./dist/output.css">
 </head>
 
 <body class="selection:bg-lime-400 selection:text-black">
